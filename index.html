@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laetitia Luquet Thérapie, naturopathe à Antibes</title>
+<meta name="description" content="Laetitia Luquet, naturopathe à Antibes : hypnose, aromathérapie et phytothérapie, 30 rue du Haut Castelet. Noté 5,0 sur Google (11 avis).">
+<meta property="og:title" content="Laetitia Luquet Thérapie, naturopathe à Antibes">
+<meta property="og:description" content="Hypnose, aromathérapie et phytothérapie au 30 rue du Haut Castelet, dans le vieil Antibes. 5,0 sur Google, 11 avis.">
+<meta name="theme-color" content="#1e3f2c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23dfe8d4'/%3E%3Cpath d='M22 16v30h10M34 16v30h10' fill='none' stroke='%231e3f2c' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;600&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Laetitia Luquet Thérapie",
+  "description": "Naturopathe, conseillère en aromathérapie et phytothérapie à Antibes.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "30 Rue du Haut Castelet",
+    "postalCode": "06600",
+    "addressLocality": "Antibes",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33756863389",
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.5792687, "longitude": 7.1258323 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:30",
+    "closes": "19:30"
+  }],
+  "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJz4ivClHTzRIRv1YXqpAEHog",
+  "sameAs": ["https://www.instagram.com/laetitia_aroma_phyto/"]
+}
+</script>
+<style>
+/* ==========================================================================
+   DESIGN DECISIONS: Laetitia Luquet Thérapie, Antibes
+   Direction: EDITORIAL LUXE, "herbier" variant. Magazine grid, thin rules,
+     numbered sections, captions; one soft gesture borrowed from her own logo
+     (arched masks + a drawn olive branch), because the brand is botanical.
+   Photos: only one is usable (the Street View of rue du Haut Castelet, with
+     its enamel street sign, cobbles and green shutters). The logo files, the
+     2023 text poster and the distorted 360° panorama are skipped. So the
+     page is type-led; the street photo becomes the "it's mine" moment, framed
+     in an arch in the hero and full-height in the location section.
+   Palette: from her logo and the street. Paper off-white with a green cast
+     (--bg), pale sage of the logo blob (--surface), the deep forest green of
+     the "LL" letters (--brand, the one strong colour move: a full-bleed field
+     for the signature quote), and the terracotta of the door at no. 30
+     (--accent), used sparingly for stars and numerals.
+   Type: Instrument Serif (display, roman + italic): high-contrast, slightly
+     condensed, editorial. Hanken Grotesk 400/600: quiet, humanist body.
+   Hero: typographic poster. A huge serif headline naming her street, the
+     rating, two actions, the open badge; the street photo in an arch.
+   Rhythm: poster hero → sticky-side proof + snap rail → oversized numbered
+     list (hypnosis) → SIGNATURE: forest field, giant verbatim review quote
+     with a branch drawn in code → editorial split with pull quote (plants)
+     → photo with overlapping panel + hours + map → big phone-number band.
+   ========================================================================== */
+:root{
+  --bg:#f3f1e8; --surface:#e3ead9; --ink:#15281c; --ink-soft:#4a5b4f;
+  --brand:#1e3f2c; --brand-ink:#eef2e6; --accent:#a4532a; --sage:#b7c9a0;
+  --line:rgba(21,40,28,.16); --line-inv:rgba(238,242,230,.22);
+
+  --font-display:"Instrument Serif", "Times New Roman", serif;
+  --font-body:"Hanken Grotesk", system-ui, sans-serif;
+  --step--1:clamp(.875rem, .85rem + .12vw, .9375rem);
+  --step-0:clamp(1.0625rem, 1.01rem + .25vw, 1.1875rem);
+  --step-1:clamp(1.25rem, 1.14rem + .5vw, 1.5rem);
+  --step-2:clamp(1.55rem, 1.3rem + 1.1vw, 2.2rem);
+  --step-3:clamp(2.1rem, 1.6rem + 2.3vw, 3.4rem);
+  --step-4:clamp(2.6rem, 1.9rem + 3.6vw, 5rem);
+  --step-5:clamp(3rem, 2rem + 5.6vw, 6.6rem);
+  --step-6:clamp(3.4rem, 11vw, 8.5rem);
+
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:24px;
+  --space-6:32px; --space-7:48px; --space-8:64px; --space-9:96px; --space-10:128px;
+  --section:clamp(64px, 12vw, 160px);
+  --gutter:clamp(20px, 5vw, 48px);
+  --max:1280px;
+
+  --r-arch:999px; --r-1:6px;
+
+  --ease-out:cubic-bezier(.16,1,.3,1); --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --dur-1:180ms; --dur-2:400ms; --dur-3:800ms;
+  --bar-h:0px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--step-0)/1.6 var(--font-body);
+  padding-bottom:var(--bar-h);overflow-x:hidden;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .08 0 0 0 0 .16 0 0 0 0 .11 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+::selection{background:var(--brand);color:var(--brand-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1;letter-spacing:-.015em;margin:0;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+em{font-style:italic}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:var(--gutter)}
+.label{font:600 var(--step--1)/1.3 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.label b{color:var(--accent);font-weight:600}
+.grid>.label{grid-column:1/-1}
+.skip{position:absolute;left:var(--space-4);top:-100px;z-index:100;background:var(--brand);color:var(--brand-ink);padding:var(--space-3) var(--space-4);border-radius:var(--r-1)}
+.skip:focus{top:var(--space-4)}
+.ico{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+section[id]{scroll-margin-top:72px}
+
+/* Links that draw in */
+.ul{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:2px;transition:background-size var(--dur-2) var(--ease-out)}
+@media (hover:hover){.ul{background-size:0 1px}.ul:hover{background-size:100% 1px}}
+
+/* Buttons */
+.btn{--b:var(--brand);--c:var(--brand-ink);display:inline-flex;align-items:center;justify-content:center;gap:var(--space-3);
+  min-height:52px;padding:0 var(--space-6);border-radius:var(--r-arch);border:1px solid var(--b);background:var(--b);color:var(--c);
+  font:600 var(--step--1)/1 var(--font-body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
+  position:relative;overflow:hidden;isolation:isolate;transition:transform var(--dur-1) var(--ease-out),color var(--dur-2) var(--ease-out)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--accent);transform:translateY(101%);transition:transform var(--dur-2) var(--ease-out)}
+.btn--ghost{--b:transparent;--c:var(--ink);border-color:var(--ink)}
+.btn--ghost::before{background:var(--ink)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover){.btn:hover::before{transform:none}.btn--ghost:hover{color:var(--bg)}}
+
+/* Stars */
+.stars{display:inline-flex;gap:2px;color:var(--accent)}
+.stars svg{width:14px;height:14px;fill:currentColor}
+
+/* Open badge */
+.badge{display:inline-flex;align-items:center;gap:var(--space-2);font:600 var(--step--1)/1.2 var(--font-body);color:var(--ink-soft)}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--ink-soft);flex:none}
+.badge.is-open i{background:#2f7a45;box-shadow:0 0 0 0 rgba(47,122,69,.5);animation:pulse 2.4s var(--ease-out) infinite}
+.badge.is-open{color:var(--ink)}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(47,122,69,0)}100%{box-shadow:0 0 0 0 rgba(47,122,69,0)}}
+
+/* ---------- Header ---------- */
+.hd{position:fixed;inset:0 0 auto;z-index:50;transition:background var(--dur-2) var(--ease-out),box-shadow var(--dur-2) var(--ease-out)}
+.hd__in{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);height:68px;transition:height var(--dur-2) var(--ease-out)}
+.hd.is-scrolled{background:rgba(243,241,232,.94);box-shadow:0 1px 0 var(--line)}
+.hd.is-scrolled .hd__in{height:56px}
+.mark{display:inline-flex;align-items:center;gap:var(--space-3);text-decoration:none;min-height:44px}
+.mark svg{width:40px;height:40px;transition:transform var(--dur-2) var(--ease-out)}
+.hd.is-scrolled .mark svg{transform:scale(.86)}
+.mark span{font:400 1.375rem/1 var(--font-display);letter-spacing:-.01em}
+.mark small{display:block;font:600 .6875rem/1.2 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:3px}
+.nav{display:none}
+.hd__call{display:none}
+.menu-btn{width:48px;height:48px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;position:relative;z-index:61}
+.menu-btn span{display:block;width:18px;height:1.5px;background:currentColor;transition:transform var(--dur-2) var(--ease-out)}
+.menu-btn span:first-child{transform:translateY(-3px)}
+.menu-btn span:last-child{transform:translateY(3px)}
+.menu-btn[aria-expanded="true"]{color:var(--brand-ink);border-color:var(--line-inv)}
+.menu-btn[aria-expanded="true"] span:first-child{transform:translateY(.75px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-.75px) rotate(-45deg)}
+
+.sheet{position:fixed;inset:0;z-index:60;background:var(--brand);color:var(--brand-ink);padding:96px var(--gutter) calc(var(--space-7) + env(safe-area-inset-bottom));
+  display:flex;flex-direction:column;justify-content:space-between;visibility:hidden;clip-path:inset(0 0 100% 0);
+  transition:clip-path var(--dur-3) var(--ease-in-out),visibility 0s linear var(--dur-3)}
+.sheet.is-open{visibility:visible;clip-path:inset(0);transition:clip-path var(--dur-3) var(--ease-in-out)}
+.sheet ol{list-style:none;margin:0;padding:0;counter-reset:m}
+.sheet li{border-top:1px solid var(--line-inv);opacity:0;transform:translateY(24px);transition:opacity var(--dur-2) var(--ease-out),transform var(--dur-3) var(--ease-out)}
+.sheet.is-open li{opacity:1;transform:none;transition-delay:calc(200ms + var(--i) * 70ms)}
+.sheet li a{display:flex;align-items:baseline;gap:var(--space-4);padding:var(--space-3) 0;font:400 clamp(2.2rem,9vw,3.4rem)/1.1 var(--font-display);text-decoration:none;counter-increment:m}
+.sheet li a::before{content:"0" counter(m);font:600 var(--step--1)/1 var(--font-body);letter-spacing:.1em;color:var(--sage)}
+.sheet__foot{display:grid;gap:var(--space-3);font-size:var(--step--1);color:rgba(238,242,230,.8)}
+.sheet__foot a{font:400 var(--step-2)/1.1 var(--font-display);color:var(--brand-ink);text-decoration:none}
+body.menu-open .hd .mark{color:var(--brand-ink)}
+body.menu-open .hd .mark small{color:rgba(238,242,230,.7)}
+body.menu-open .hd{background:transparent;box-shadow:none}
+body.menu-open{overflow:hidden}
+
+/* ---------- Hero ---------- */
+.hero{padding-top:calc(68px + var(--space-6));padding-bottom:var(--space-4);position:relative}
+.hero .label{margin-bottom:var(--space-5)}
+.hero h1{font-size:var(--step-6);line-height:.92;letter-spacing:-.03em;grid-column:1/-1}
+.hero h1 em{color:var(--brand)}
+.ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.ln>span{display:block}
+.hero__lead{grid-column:1/-1;margin-top:var(--space-6);max-width:36ch;color:var(--ink-soft)}
+.hero__lead strong{color:var(--ink);font-weight:600}
+.proof{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2) var(--space-4);margin-top:var(--space-5);padding-top:var(--space-4);border-top:1px solid var(--line);font-size:var(--step--1)}
+.proof__score{font:400 var(--step-2)/1 var(--font-display);margin-right:var(--space-1)}
+.proof a{min-height:44px;display:inline-flex;align-items:center}
+.hero__cta{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);margin-top:var(--space-5)}
+.hero__cta .btn{padding:0 var(--space-4)}
+.hero__open{grid-column:1/-1;margin-top:var(--space-5)}
+.hero__media{grid-column:2/-1;margin-top:var(--space-8);position:relative}
+.arch{border-radius:var(--r-arch) var(--r-arch) var(--r-1) var(--r-1);overflow:hidden;aspect-ratio:3/4;background:var(--surface)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:72% 50%}
+.hero__media figcaption{position:absolute;left:calc(-1 * (100% / 3) - var(--gutter) * .3);bottom:var(--space-5);writing-mode:vertical-rl;transform:rotate(180deg);font:600 .75rem/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.branch{position:absolute;color:var(--brand);pointer-events:none}
+.branch svg{width:100%;height:100%;overflow:visible}
+.branch{--leaf:var(--surface)}
+.hero .branch{width:42%;aspect-ratio:1/2;left:-30%;top:-14%;transform:rotate(-12deg)}
+
+/* ---------- Section shells ---------- */
+.sec{padding-block:var(--section)}
+.sec__head{grid-column:1/-1}
+.sec__head h2{font-size:var(--step-4);margin-top:var(--space-4)}
+.sec__head h2 em{color:var(--brand)}
+
+/* ---------- Reviews: sticky side + rail ---------- */
+.reviews{border-top:1px solid var(--line)}
+.score{grid-column:1/-1;display:flex;align-items:flex-end;gap:var(--space-5);margin-top:var(--space-7)}
+.score__n{font:400 clamp(6rem,30vw,12rem)/.8 var(--font-display);letter-spacing:-.04em;color:var(--brand)}
+.score__meta{display:grid;gap:var(--space-2);padding-bottom:var(--space-2);font-size:var(--step--1)}
+.score__meta .stars{margin-top:var(--space-2)}
+.proof a,.score__meta a{text-decoration:underline;text-decoration-color:var(--line);transition:text-decoration-color var(--dur-1)}
+@media (hover:hover){.proof a:hover,.score__meta a:hover{text-decoration-color:currentColor}}
+.score__meta a{font-weight:600;min-height:44px;display:inline-flex;align-items:center;gap:var(--space-2)}
+.rail{grid-column:1/-1;margin-top:var(--space-7);display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:var(--space-4);
+  overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;
+  margin-inline:calc(-1 * var(--gutter));padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);list-style:none;padding-block:0 var(--space-2)}
+.rail::-webkit-scrollbar{display:none}
+.rv{scroll-snap-align:start;background:var(--surface);padding:var(--space-6) var(--space-5);border-radius:var(--r-1);display:flex;flex-direction:column;gap:var(--space-5);margin:0}
+.rv blockquote{margin:0;font:400 var(--step-2)/1.18 var(--font-display);letter-spacing:-.01em}
+.rv figcaption{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:var(--space-3);padding-top:var(--space-4);border-top:1px solid var(--line);font-size:var(--step--1);font-weight:600}
+.rail-hint{grid-column:1/-1;display:flex;align-items:center;gap:var(--space-3);margin-top:var(--space-4);font-size:var(--step--1);color:var(--ink-soft)}
+.rail-hint::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* ---------- Hypnose: oversized numbered list ---------- */
+.hyp{background:var(--surface)}
+.hyp__intro{grid-column:1/-1;margin-top:var(--space-5);max-width:52ch;color:var(--ink-soft)}
+.olist{grid-column:1/-1;list-style:none;margin:var(--space-8) 0 0;padding:0;counter-reset:n}
+.olist li{display:grid;grid-template-columns:clamp(64px,18vw,96px) minmax(0,1fr);column-gap:var(--space-5);row-gap:var(--space-4);padding-block:var(--space-6);border-top:1px solid var(--line);counter-increment:n}
+.olist li:last-child{border-bottom:1px solid var(--line)}
+.olist li::before{content:counter(n,decimal-leading-zero);font:400 var(--step-5)/.8 var(--font-display);color:var(--accent);letter-spacing:-.03em;grid-row:span 2}
+.olist h3{font-size:var(--step-3);align-self:end}
+.olist blockquote{margin:0;max-width:56ch;color:var(--ink-soft);grid-column:2}
+.olist blockquote p::before{content:"« "}
+.olist blockquote p::after{content:" »"}
+.olist cite{display:block;margin-top:var(--space-2);font:600 var(--step--1)/1.3 var(--font-body);font-style:normal;color:var(--ink)}
+
+/* ---------- Signature band ---------- */
+.sig{background:var(--brand);color:var(--brand-ink);position:relative;overflow:hidden}
+.sig .label{color:var(--sage)}
+.sig blockquote{grid-column:1/-1;margin:var(--space-6) 0 0;font:400 var(--step-5)/.98 var(--font-display);letter-spacing:-.025em;position:relative;z-index:1}
+.sig blockquote span{display:block}
+.sig blockquote em{color:var(--sage)}
+.sig figcaption{grid-column:1/-1;margin-top:var(--space-7);display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5);font-size:var(--step--1);font-weight:600;position:relative;z-index:1}
+.sig figcaption .stars{color:var(--sage)}
+.sig__note{grid-column:1/-1;margin-top:var(--space-6);max-width:44ch;color:rgba(238,242,230,.82);position:relative;z-index:1}
+.sig .branch{color:var(--sage);width:min(46vw,340px);aspect-ratio:1/2;right:-16%;bottom:-8%;opacity:.22;transform:rotate(14deg)}
+@media (min-width:960px){.sig .branch{width:auto;height:118%;right:6%;top:-6%;bottom:auto;opacity:.75}}
+.sig .branch{--leaf:none}
+
+/* ---------- Plantes: editorial split ---------- */
+.plants__words{grid-column:1/-1;margin-top:var(--space-7);display:grid}
+.plants__words div{display:grid;gap:var(--space-2);padding-block:var(--space-5);border-top:1px solid var(--line)}
+.plants__words dt{font:italic 400 var(--step-4)/1 var(--font-display);color:var(--brand);letter-spacing:-.02em}
+.plants__words dd{margin:0;color:var(--ink-soft);max-width:40ch}
+.pull{grid-column:1/-1;margin:var(--space-7) 0 0;padding-left:var(--space-5);border-left:2px solid var(--accent)}
+.pull blockquote{margin:0;font:400 var(--step-2)/1.2 var(--font-display)}
+.pull figcaption{margin-top:var(--space-4);font-size:var(--step--1);font-weight:600;display:flex;gap:var(--space-3);align-items:center;flex-wrap:wrap}
+.plants__lead{grid-column:1/-1;margin-top:var(--space-5);max-width:52ch;color:var(--ink-soft)}
+
+/* ---------- Lieu ---------- */
+.place{padding-top:0}
+.place__photo{grid-column:1/-1;margin:0 calc(-1 * var(--gutter));position:relative;overflow:hidden;aspect-ratio:4/5;background:var(--surface)}
+.place__photo img{width:100%;height:100%;object-fit:cover;object-position:68% 60%}
+.place__photo figcaption{position:absolute;left:var(--gutter);top:var(--space-5);background:var(--bg);padding:var(--space-2) var(--space-3);font:600 .75rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;border-radius:2px}
+.place__panel{grid-column:1/-1;background:var(--bg);margin-top:calc(-1 * var(--space-9));position:relative;padding:var(--space-6) var(--space-5) var(--space-5);margin-inline:calc(-1 * var(--space-2));border-top:2px solid var(--brand)}
+.place__panel h2{font-size:var(--step-4);margin-top:var(--space-4)}
+.place__panel h2 em{color:var(--brand)}
+.addr{margin-top:var(--space-5);font:400 var(--step-1)/1.35 var(--font-body)}
+.place__acts{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-5)}
+.hours{grid-column:1/-1;margin-top:var(--space-8)}
+.hours__top{display:flex;justify-content:space-between;align-items:baseline;gap:var(--space-4);flex-wrap:wrap;padding-bottom:var(--space-4);border-bottom:1px solid var(--ink)}
+.hours__top h3{font-size:var(--step-3)}
+.hours table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours th,.hours td{padding:var(--space-3) 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours td{text-align:right}
+.hours th{text-transform:capitalize}
+.hours tr.is-today th,.hours tr.is-today td{font-weight:600;color:var(--brand)}
+.hours tr.is-today th::after{content:"aujourd’hui";margin-left:var(--space-3);font:600 .6875rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);vertical-align:middle}
+.hours tr.is-closed td{color:var(--ink-soft)}
+.map{grid-column:1/-1;margin-top:var(--space-7);position:relative;border-radius:var(--r-1);overflow:hidden;background:var(--surface);aspect-ratio:4/3}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.55) contrast(1.02)}
+.map__fallback{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:var(--space-5);font-size:var(--step--1)}
+
+/* ---------- Contact ---------- */
+.contact{border-top:1px solid var(--line);position:relative}
+.contact h2{grid-column:1/-1;font-size:var(--step-5);margin-top:var(--space-4);letter-spacing:-.03em}
+.contact h2 em{color:var(--brand)}
+.bigtel{grid-column:1/-1;margin-top:var(--space-7);display:inline-flex;flex-direction:column;text-decoration:none;justify-self:start}
+.bigtel small{font:600 var(--step--1)/1.2 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.bigtel span{font:400 clamp(2.9rem,13.4vw,7.5rem)/1 var(--font-display);letter-spacing:-.03em;white-space:nowrap;margin-top:var(--space-2);
+  background:linear-gradient(var(--accent),var(--accent)) 0 92%/0 2px no-repeat;transition:background-size var(--dur-3) var(--ease-out)}
+@media (hover:hover){.bigtel:hover span{background-size:100% 2px}}
+.contact__acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}
+.contact__note{grid-column:1/-1;margin-top:var(--space-6);color:var(--ink-soft);max-width:48ch}
+.contact__note .ig{display:flex;margin-top:var(--space-2);color:var(--ink);width:max-content}
+.contact__acts{display:grid}
+@media (min-width:640px){.contact__acts{display:flex}}
+.ig{display:inline-flex;align-items:center;gap:var(--space-3);min-height:48px;font-weight:600;text-decoration:none}
+
+/* ---------- Footer ---------- */
+.ft{background:var(--ink);color:var(--brand-ink);padding-block:var(--space-8) var(--space-7)}
+.ft .grid{row-gap:var(--space-6)}
+.ft__name{grid-column:1/-1;font:400 var(--step-4)/1 var(--font-display);letter-spacing:-.02em}
+.ft__name em{color:var(--sage)}
+.ft__col{grid-column:span 2;display:grid;gap:var(--space-2);font-size:var(--step--1);color:rgba(238,242,230,.82);align-content:start}
+.ft__col a{min-height:44px;display:inline-flex;align-items:center;gap:var(--space-2)}
+.ft__base{grid-column:1/-1;padding-top:var(--space-5);border-top:1px solid var(--line-inv);font-size:var(--step--1);color:rgba(238,242,230,.65);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3)}
+
+/* ---------- Sticky action bar (mobile) ---------- */
+.bar{position:fixed;inset:auto 0 0;z-index:40;display:grid;grid-template-columns:repeat(3,1fr);background:var(--ink);color:var(--brand-ink);
+  padding-bottom:env(safe-area-inset-bottom);border-top:1px solid var(--line-inv);transition:transform var(--dur-2) var(--ease-out)}
+.bar a{min-height:60px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;font:600 .75rem/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase}
+.bar a+a{border-left:1px solid var(--line-inv)}
+.bar a:first-child{background:var(--brand)}
+.bar a:active{background:var(--accent)}
+body.menu-open .bar{transform:translateY(100%)}
+@media (max-width:767px){:root{--bar-h:calc(60px + env(safe-area-inset-bottom))}}
+
+/* ---------- ≥640 ---------- */
+@media (min-width:640px){
+  .hero__cta{display:flex;flex-wrap:wrap}
+  .hero__cta .btn{padding:0 var(--space-6)}
+  .rail{grid-auto-columns:58%}
+  .place__photo{aspect-ratio:16/11}
+  .place__panel{margin-inline:var(--space-6) 0;padding:var(--space-7) var(--space-7) var(--space-6)}
+  .plants__words div{grid-template-columns:1fr 1fr;align-items:baseline;gap:var(--space-5)}
+}
+@media (min-width:768px){
+  .bar{display:none}
+  .hd__call{display:inline-flex;min-height:44px;padding:0 var(--space-5)}
+}
+/* ---------- ≥960: 12 columns ---------- */
+@media (min-width:960px){
+  .grid{grid-template-columns:repeat(12,minmax(0,1fr))}
+  .menu-btn{display:none}
+  .nav{display:flex;gap:var(--space-6);font-size:var(--step--1);font-weight:600}
+  .nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+  .hd__end{display:flex;align-items:center;gap:var(--space-6)}
+
+  .hero{padding-top:calc(68px + var(--space-6));padding-bottom:var(--space-8);min-height:100svh;display:flex;align-items:center}
+  .hero>.grid{width:100%;grid-template-rows:auto auto auto auto auto 1fr}
+  .hero .label,.hero h1,.hero__lead,.proof,.hero__cta,.hero__open{grid-column:1/8}
+  .hero .label{grid-row:1}.hero h1{grid-row:2}.hero__lead{grid-row:3}.proof{grid-row:4}.hero__cta{grid-row:5}.hero__open{grid-row:6;align-self:start}
+  .hero h1{font-size:clamp(5rem,7.8vw,8.5rem);grid-column:1/9;position:relative;z-index:2}
+  .proof{max-width:520px}
+  .hero__lead{max-width:46ch;margin-top:var(--space-5)}
+  .hero .label{margin-bottom:var(--space-4)}
+  .hero__media{grid-column:8/13;grid-row:1/7;margin-top:0;align-self:center}
+  .hero__media figcaption{left:auto;right:calc(-1 * var(--space-6));bottom:var(--space-7)}
+  .hero .branch{left:-26%;top:-12%;width:38%}
+
+  .reviews .grid{align-items:start}
+  .reviews .sec__head{grid-column:1/5;grid-row:1;position:sticky;top:110px}
+  .score{grid-column:1/5;grid-row:2;position:sticky;top:330px;flex-direction:column;align-items:flex-start;gap:var(--space-4)}
+  .rail{grid-column:6/13;grid-row:1/4;margin:0;padding:0;overflow:visible;display:grid;grid-auto-flow:row;grid-template-columns:1fr 1fr;grid-auto-columns:auto;gap:var(--space-5)}
+  .rail .rv:nth-child(even){transform:translateY(var(--space-9))}
+  .rail-hint{display:none}
+  .reviews{padding-bottom:calc(var(--section) + var(--space-9))}
+
+  .hyp .sec__head{grid-column:1/9}
+  .hyp__intro{grid-column:1/7}
+  .olist li{grid-template-columns:minmax(0,2fr) minmax(0,5fr) minmax(0,5fr);column-gap:var(--gutter);align-items:baseline;padding-block:var(--space-7)}
+  .olist li::before{grid-row:auto}
+  .olist h3{align-self:baseline}
+  .olist blockquote{grid-column:auto}
+
+  .sig blockquote{grid-column:1/11}
+  .sig figcaption,.sig__note{grid-column:1/8}
+
+  .plants .sec__head{grid-column:1/6;grid-row:1}
+  .plants__lead{grid-column:1/6;grid-row:2}
+  .pull{grid-column:1/6;grid-row:3;align-self:start}
+  .plants__words{grid-column:7/13;grid-row:1/5;margin-top:0}
+  .plants__words div{grid-template-columns:1fr;padding-block:var(--space-6)}
+
+  .place{padding-top:var(--space-6)}
+  .place__photo{grid-column:1/8;grid-row:1/3;margin:0;aspect-ratio:4/5;border-radius:var(--r-arch) var(--r-arch) var(--r-1) var(--r-1)}
+  .place__photo figcaption{top:auto;bottom:var(--space-5);left:var(--space-5)}
+  .place__panel{grid-column:6/13;grid-row:1;margin:var(--space-9) 0 0;align-self:start;padding:var(--space-7)}
+  .hours{grid-column:9/13;grid-row:2;margin-top:var(--space-7);align-self:end}
+  .map{grid-column:1/13;aspect-ratio:21/8;margin-top:var(--space-8)}
+
+  .contact h2{grid-column:1/10;grid-row:2}
+  .bigtel{grid-column:1/9;grid-row:3}
+  .contact__acts{grid-column:1/8;grid-row:4}
+  .contact__note{grid-column:9/13;grid-row:3/5;align-self:end;margin:0}
+
+  .ft__name{grid-column:1/6}
+  .ft__col{grid-column:span 2}
+  .ft__col:first-of-type{grid-column:6/9}
+}
+
+
+/* ---------- Motion (only once JS is present) ---------- */
+.js .hd{opacity:0;transition:opacity var(--dur-3) var(--ease-out),background var(--dur-2) var(--ease-out),box-shadow var(--dur-2) var(--ease-out)}
+.js.is-loaded .hd{opacity:1}
+.js .hero .ln>span{transform:translateY(105%);transition:transform 900ms var(--ease-out);transition-delay:calc(150ms + var(--i) * 80ms)}
+.js.is-loaded .hero .ln>span{transform:none}
+.js .hero .label,.js .hero__lead,.js .proof,.js .hero__cta,.js .hero__open{opacity:0;transform:translateY(16px);transition:opacity var(--dur-3) var(--ease-out) 520ms,transform var(--dur-3) var(--ease-out) 520ms}
+.js .hero .label{transition-delay:80ms}
+.js.is-loaded .hero .label,.js.is-loaded .hero__lead,.js.is-loaded .proof,.js.is-loaded .hero__cta,.js.is-loaded .hero__open{opacity:1;transform:none}
+.js .hero .arch{clip-path:inset(100% 0 0 0 round var(--r-arch) var(--r-arch) 0 0);transition:clip-path 1100ms var(--ease-in-out) 250ms}
+.js .hero .arch img{transform:scale(1.08);transition:transform 1400ms var(--ease-out) 250ms}
+.js.is-loaded .hero .arch{clip-path:inset(0 round var(--r-arch) var(--r-arch) 0 0)}
+.js.is-loaded .hero .arch img{transform:none}
+.js .branch{clip-path:inset(100% 0 0 0);transition:clip-path 1600ms var(--ease-in-out) 600ms}
+.js .sig.is-in .branch,.js.is-loaded .hero .branch{clip-path:inset(-10% -10% -10% -10%)}
+
+.js [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity var(--dur-3) var(--ease-out),transform var(--dur-3) var(--ease-out);transition-delay:calc(var(--d,0) * 80ms)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+.js .rail .rv:nth-child(even)[data-reveal].is-in{transform:none}
+@media (min-width:960px){
+  .js .rail .rv:nth-child(even)[data-reveal]{transform:translateY(calc(var(--space-9) + 20px))}
+  .js .rail .rv:nth-child(even)[data-reveal].is-in{transform:translateY(var(--space-9))}
+}
+.js .place__photo img{transform:scale(1.06);transition:transform 1400ms var(--ease-out)}
+.js .place__photo.is-in img{transform:scale(1)}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .js .place__photo.is-in img{transform:none;animation:drift linear both;animation-timeline:view();animation-range:cover}
+    @keyframes drift{from{transform:scale(1.12) translateY(-3%)}to{transform:scale(1.02) translateY(3%)}}
+  }
+}
+@media (hover:hover){
+  .rv{transition:transform var(--dur-2) var(--ease-out)}
+  .arch img{transition:transform var(--dur-3) var(--ease-out)}
+  .hero__media:hover .arch img{transform:scale(1.03)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .hero .ln>span,.js [data-reveal],.js .hero .label,.js .hero__lead,.js .proof,.js .hero__cta,.js .hero__open,.js .hero .arch img,.js .place__photo img{transform:none!important;opacity:1!important}
+  .js .hero .arch,.js .branch{clip-path:none!important}
+  .js .hd{opacity:1}
+}
+</style>
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var root = document.documentElement, body = document.body;
+  requestAnimationFrame(function () { requestAnimationFrame(function () { root.classList.add('is-loaded'); }); });
+
+  /* Header shrink */
+  var hd = document.querySelector('.hd');
+  var onScroll = function () { hd.classList.toggle('is-scrolled', scrollY > 24); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* Menu */
+  var btn = document.querySelector('.menu-btn'), sheet = document.getElementById('menu');
+  var setMenu = function (open) {
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    sheet.classList.toggle('is-open', open);
+    sheet.setAttribute('aria-hidden', !open);
+    body.classList.toggle('menu-open', open);
+    if (open) sheet.querySelector('a').focus({ preventScroll: true });
+  };
+  btn.addEventListener('click', function () { setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+  sheet.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+
+  /* Smooth anchors (respecting reduced motion) */
+  var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#"]'); if (!a) return;
+    var t = document.getElementById(a.getAttribute('href').slice(1)); if (!t) return;
+    e.preventDefault();
+    setTimeout(function () { t.scrollIntoView({ behavior: still ? 'auto' : 'smooth' }); history.replaceState(null, '', a.hash); }, 0);
+  });
+  addEventListener('keydown', function (e) { if (e.key === 'Escape' && sheet.classList.contains('is-open')) { setMenu(false); btn.focus(); } });
+  matchMedia('(min-width:960px)').addEventListener('change', function (m) { if (m.matches) setMenu(false); });
+
+  /* Reveals */
+  var targets = document.querySelectorAll('[data-reveal], .place__photo, .sig');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    targets.forEach(function (t) { io.observe(t); });
+  } else targets.forEach(function (t) { t.classList.add('is-in'); });
+
+  /* Hours + live badge (Europe/Paris) */
+  var HOURS = { lundi: '08:30–19:30', mardi: '08:30–19:30', mercredi: '08:30–19:30', jeudi: '08:30–19:30', vendredi: '08:30–19:30', samedi: '08:30–19:30', dimanche: 'Fermé' };
+  var DAYS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  var toMin = function (s) { var p = s.trim().split(/[:h]/); return (+p[0]) * 60 + (+(p[1] || 0)); };
+  var ranges = function (txt) {
+    txt = (txt || '').toLowerCase();
+    if (!txt || /ferm/.test(txt)) return [];
+    if (/24\s*h|24\/24/.test(txt)) return [[0, 1440]];
+    return txt.split(/[,;]/).map(function (r) {
+      var p = r.split(/[–—-]/); if (p.length < 2) return null;
+      var a = toMin(p[0]), b = toMin(p[1]); if (b <= a) b += 1440; return [a, b];
+    }).filter(Boolean);
+  };
+  var fmt = function (m) { m = m % 1440; var h = Math.floor(m / 60), mm = m % 60; return h + 'h' + (mm ? String(mm).padStart(2, '0') : ''); };
+  var now = new Date(), parts = {};
+  try {
+    new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Paris', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+      .formatToParts(now).forEach(function (p) { parts[p.type] = p.value; });
+  } catch (e) {}
+  var dIdx = parts.weekday ? ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts.weekday) : now.getDay();
+  var cur = parts.hour ? (+parts.hour % 24) * 60 + (+parts.minute) : now.getHours() * 60 + now.getMinutes();
+  var today = DAYS[dIdx], yest = DAYS[(dIdx + 6) % 7];
+  var row = document.querySelector('.hours tr[data-day="' + today + '"]'); if (row) row.classList.add('is-today');
+
+  var open = null;
+  ranges(HOURS[today]).forEach(function (r) { if (cur >= r[0] && cur < r[1]) open = r; });
+  ranges(HOURS[yest]).forEach(function (r) { if (r[1] > 1440 && cur + 1440 < r[1]) open = [r[0] - 1440, r[1] - 1440]; });
+  var label;
+  if (open) label = open[1] - open[0] >= 1440 ? 'Ouvert maintenant · 24h/24' : 'Ouvert maintenant · jusqu’à ' + fmt(open[1]);
+  else {
+    label = 'Fermé';
+    for (var i = 0; i < 8; i++) {
+      var day = DAYS[(dIdx + i) % 7];
+      var next = ranges(HOURS[day]).filter(function (r) { return i > 0 || r[0] > cur; })[0];
+      if (next) { label = 'Fermé · ouvre ' + (i === 0 ? 'à ' : i === 1 ? 'demain à ' : day + ' à ') + fmt(next[0]); break; }
+    }
+  }
+  document.querySelectorAll('[data-open]').forEach(function (b) { b.classList.toggle('is-open', !!open); b.querySelector('span').textContent = label; });
+
+  document.getElementById('year').textContent = now.getFullYear();
+});
+</script>
+<!--sf:preview--><meta name="robots" content="noindex, nofollow"><!--/sf:preview-->
+<!--sf:og--><meta property="og:image" content="https://laetitia-luquet-therapie-antibes.aymenjallouli.dev/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://laetitia-luquet-therapie-antibes.aymenjallouli.dev/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://laetitia-luquet-therapie-antibes.aymenjallouli.dev/og.jpg"><!--/sf:og-->
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .7-4.4 4.1 1.2 5.9L10 14.9l-5.4 2.9 1.2-5.9L1.4 7.8l6-.7z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.8 1.8 0 0 1-1.9 1.8A16.6 16.6 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></symbol>
+    <symbol id="i-sms" viewBox="0 0 24 24"><path d="M4 5.5h16v10.5H9.5L5.5 19.5V16H4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></symbol>
+    <symbol id="branch" viewBox="0 0 200 400" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+      <path vector-effect="non-scaling-stroke" d="M104 398C96 330 92 260 102 196S118 70 98 4"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M101 340c-20-6-40-24-46-44 22 2 40 20 46 44z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M99 300c18-12 40-16 58-10-14 16-38 20-58 10z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M98 252c-22-4-44-20-52-40 24 0 44 16 52 40z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M101 214c16-16 38-24 58-22-12 18-36 26-58 22z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M105 166c-22-8-40-28-44-50 22 6 38 26 44 50z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M108 128c14-18 34-28 54-28-10 20-32 30-54 28z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M106 84c-18-10-32-30-32-50 18 10 30 28 32 50z"/>
+      <path style="fill:var(--leaf,none)" vector-effect="non-scaling-stroke" d="M104 52c10-16 26-26 44-28-8 18-26 28-44 28z"/>
+      <circle style="fill:var(--leaf,none)" cx="96" cy="8" r="4"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="hd">
+  <div class="wrap hd__in">
+    <a class="mark" href="#top" aria-label="Laetitia Luquet Thérapie, retour en haut">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19.25" fill="none" stroke="currentColor" stroke-width="1"/><path d="M13.5 11v17h6.5M21 11v17h6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Laetitia Luquet<small>Thérapie · Antibes</small></span>
+    </a>
+    <div class="hd__end">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="ul" href="#avis">Avis</a>
+        <a class="ul" href="#hypnose">Hypnose</a>
+        <a class="ul" href="#plantes">Plantes</a>
+        <a class="ul" href="#lieu">Le lieu</a>
+        <a class="ul" href="#rdv">Rendez-vous</a>
+      </nav>
+      <a class="btn hd__call" href="tel:+33756863389"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>07 56 86 33 89</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="sheet" id="menu" aria-hidden="true">
+  <nav aria-label="Menu mobile">
+    <ol>
+      <li style="--i:0"><a href="#avis">Avis</a></li>
+      <li style="--i:1"><a href="#hypnose">Hypnose</a></li>
+      <li style="--i:2"><a href="#plantes">Plantes</a></li>
+      <li style="--i:3"><a href="#lieu">Le lieu</a></li>
+      <li style="--i:4"><a href="#rdv">Rendez-vous</a></li>
+    </ol>
+  </nav>
+  <div class="sheet__foot">
+    <a href="tel:+33756863389">07 56 86 33 89</a>
+    <span>30 rue du Haut Castelet, 06600 Antibes</span>
+  </div>
+</div>
+
+<main id="main">
+  <!-- HERO: typographic poster -->
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <div class="wrap grid">
+      <p class="label">Naturopathe · Hypnose · Plantes — <b>Antibes</b></p>
+      <h1 id="h-hero">
+        <span class="ln"><span style="--i:0">Hypnose &amp;</span></span>
+        <span class="ln"><span style="--i:1">plantes,</span></span>
+        <span class="ln"><span style="--i:2"><em>rue du Haut</em></span></span>
+        <span class="ln"><span style="--i:3"><em>Castelet.</em></span></span>
+      </h1>
+      <p class="hero__lead"><strong>Laetitia Luquet</strong>, naturopathe, conseillère en aromathérapie et phytothérapie, pratique aussi l’hypnose. Elle vous reçoit dans le vieil Antibes.</p>
+      <div class="proof">
+        <span class="proof__score">5,0</span>
+        <span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJz4ivClHTzRIRv1YXqpAEHog" target="_blank" rel="noopener">11 avis Google</a>
+      </div>
+      <div class="hero__cta">
+        <a class="btn" href="tel:+33756863389"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+        <a class="btn btn--ghost" href="sms:+33756863389?&amp;body=Bonjour%20Laetitia%2C%20je%20souhaiterais%20prendre%20rendez-vous%20pour%20une%20s%C3%A9ance.%20Quelles%20seraient%20vos%20disponibilit%C3%A9s%20%3F%20Merci."><svg class="ico" aria-hidden="true"><use href="#i-sms"/></svg>SMS</a>
+      </div>
+      <p class="hero__open badge" data-open><i></i><span>Lun.–sam. 8h30–19h30</span></p>
+      <figure class="hero__media">
+        <div class="branch" aria-hidden="true"><svg><use href="#branch"/></svg></div>
+        <div class="arch">
+          <img src="assets/photos/photo-01.jpg" width="768" height="768" fetchpriority="high" alt="La rue du Haut Castelet à Antibes : ruelle pavée, façades ocre et volets verts, plaque de rue émaillée">
+        </div>
+        <figcaption>30, rue du Haut Castelet</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PROOF: sticky side + rail -->
+  <section class="sec reviews" id="avis" aria-labelledby="h-avis">
+    <div class="wrap grid">
+      <div class="sec__head" data-reveal>
+        <p class="label"><b>01</b> — Ce qu’ils en disent</p>
+        <h2 id="h-avis">On parle d’abord de <em>son écoute.</em></h2>
+      </div>
+      <div class="score" data-reveal>
+        <span class="score__n">5,0</span>
+        <div class="score__meta">
+          <span class="stars" aria-label="5 étoiles sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+          <a href="https://www.google.com/maps/place/?q=place_id:ChIJz4ivClHTzRIRv1YXqpAEHog" target="_blank" rel="noopener">Voir les 11 avis sur Google <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <ul class="rail" aria-label="Avis Google">
+        <li class="rv" data-reveal style="--d:0">
+          <blockquote>« Agréable &amp; très à l’écoute, elle a tout de suite su trouver les mots pour me mettre en confiance et a pris le temps pour avancer à mon rythme. »</blockquote>
+          <figcaption>Laetitia B. <span class="stars" aria-label="5 sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+        </li>
+        <li class="rv" data-reveal style="--d:1">
+          <blockquote>« Laëtitia est une thérapeute qui prend le temps d’expliquer et de répondre à nos questions sur l’hypnose. »</blockquote>
+          <figcaption>joffrey C. <span class="stars" aria-label="5 sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+        </li>
+        <li class="rv" data-reveal style="--d:2">
+          <blockquote>« De l’écoute au partage, j’ai été conquise par son énergie douce et positive. »</blockquote>
+          <figcaption>charlotte B. <span class="stars" aria-label="5 sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+        </li>
+        <li class="rv" data-reveal style="--d:3">
+          <blockquote>« Laëtitia est très à l’écoute et je suis plus que ravi car grâce à elle j’ai réussi à arrêter de fumer… »</blockquote>
+          <figcaption>Manu R. <span class="stars" aria-label="5 sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+        </li>
+      </ul>
+      <p class="rail-hint">Faites glisser</p>
+    </div>
+  </section>
+
+  <!-- HYPNOSE: oversized numbered list -->
+  <section class="sec hyp" id="hypnose" aria-labelledby="h-hyp">
+    <div class="wrap grid">
+      <div class="sec__head" data-reveal>
+        <p class="label"><b>02</b> — L’hypnose</p>
+        <h2 id="h-hyp">Ce qui amène à l’hypnose, <em>raconté par ceux qui sont venus.</em></h2>
+      </div>
+      <p class="hyp__intro" data-reveal>Quatre motifs reviennent dans les avis. Les mots sont les leurs, tels qu’écrits sur Google.</p>
+      <ol class="olist">
+        <li data-reveal>
+          <h3>Arrêter de fumer</h3>
+          <blockquote><p>dès la première séance, j’ai arrêté de fumer.</p><cite>joffrey C.</cite></blockquote>
+        </li>
+        <li data-reveal>
+          <h3>Le stress avant une opération</h3>
+          <blockquote><p>Ce matin avant l opération j ai réussi à gérer ce stress grâce à ses conseils.</p><cite>Brigitte D.</cite></blockquote>
+        </li>
+        <li data-reveal>
+          <h3>La peur du vide</h3>
+          <blockquote><p>Grâce à cette séance j’ai pu pleinement profiter de mon voyage en Jordanie à Pétra ou certains passages étaient vertigineux.</p><cite>Lingua M.</cite></blockquote>
+        </li>
+        <li data-reveal>
+          <h3>Le lien émotionnel à la nourriture</h3>
+          <blockquote><p>je ressens que j’ai moins de difficultés sur mes actions émotionnelles au niveau de la nourriture.</p><cite>Tracy B.</cite></blockquote>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SIGNATURE: giant verbatim quote on forest field -->
+  <section class="sec sig" aria-label="Témoignage">
+    <div class="branch" aria-hidden="true"><svg><use href="#branch"/></svg></div>
+    <figure class="wrap grid" style="margin-block:0">
+      <p class="label" data-reveal>Avis Google · mars 2023</p>
+      <blockquote data-reveal>
+        <span>« J’ai fumé pendant 15 ans.</span>
+        <span>Un paquet par jour.</span>
+        <span><em>Maintenant, je revis. »</em></span>
+      </blockquote>
+      <figcaption data-reveal>joffrey C. <span class="stars" aria-label="5 sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+      <p class="sig__note" data-reveal>Le tabac revient souvent dans ses avis. Pour en parler, un appel au 07&nbsp;56&nbsp;86&nbsp;33&nbsp;89.</p>
+    </figure>
+  </section>
+
+  <!-- PLANTES: editorial split with pull quote -->
+  <section class="sec plants" id="plantes" aria-labelledby="h-plantes">
+    <div class="wrap grid">
+      <div class="sec__head" data-reveal>
+        <p class="label"><b>03</b> — Les plantes</p>
+        <h2 id="h-plantes">Ce que la nature <em>peut ajouter.</em></h2>
+      </div>
+      <p class="plants__lead" data-reveal>Naturopathe et conseillère en aromathérapie et phytothérapie, Laetitia Luquet complète les séances par des conseils en plantes et en huiles essentielles.</p>
+      <figure class="pull" data-reveal>
+        <blockquote>« De surcroît, son diplôme en pharmacie lui procure une aisance dans son diagnostic. »</blockquote>
+        <figcaption>Julien B. <span class="stars" aria-label="5 sur 5"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></figcaption>
+      </figure>
+      <dl class="plants__words">
+        <div data-reveal><dt>Naturopathie</dt><dd>Un regard d’ensemble sur votre hygiène de vie.</dd></div>
+        <div data-reveal><dt>Aromathérapie</dt><dd>Les huiles essentielles, choisies et expliquées.</dd></div>
+        <div data-reveal><dt>Phytothérapie</dt><dd>Les plantes et leurs bienfaits, en accompagnement.</dd></div>
+        <div data-reveal><dt>Hypnose</dt><dd>Des séances pour le tabac, le stress, les peurs.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- LIEU: photo + overlapping panel + hours + map -->
+  <section class="sec place" id="lieu" aria-labelledby="h-lieu">
+    <div class="wrap grid">
+      <figure class="place__photo">
+        <img src="assets/photos/photo-01.jpg" width="768" height="768" loading="lazy" decoding="async" alt="Rue du Haut Castelet, Antibes : pavés dessinés, façade jaune aux volets verts, porte en bois">
+        <figcaption>Vieil Antibes</figcaption>
+      </figure>
+      <div class="place__panel" data-reveal>
+        <p class="label"><b>04</b> — Le lieu</p>
+        <h2 id="h-lieu">Pierre, pavés <em>et volets verts.</em></h2>
+        <p class="addr">30 rue du Haut Castelet<br>06600 Antibes</p>
+        <div class="place__acts">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Laetitia%20Luquet%20Th%C3%A9rapie%2C%2030%20Rue%20du%20Haut%20Castelet%2C%2006600%20Antibes" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Itinéraire</a>
+        </div>
+      </div>
+      <div class="hours" data-reveal>
+        <div class="hours__top">
+          <h3>Horaires</h3>
+          <p class="badge" data-open><i></i><span>Lun.–sam. 8h30–19h30</span></p>
+        </div>
+        <table>
+          <caption class="label" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">Horaires d’ouverture</caption>
+          <tbody>
+            <tr data-day="lundi"><th scope="row">lundi</th><td>8h30 – 19h30</td></tr>
+            <tr data-day="mardi"><th scope="row">mardi</th><td>8h30 – 19h30</td></tr>
+            <tr data-day="mercredi"><th scope="row">mercredi</th><td>8h30 – 19h30</td></tr>
+            <tr data-day="jeudi"><th scope="row">jeudi</th><td>8h30 – 19h30</td></tr>
+            <tr data-day="vendredi"><th scope="row">vendredi</th><td>8h30 – 19h30</td></tr>
+            <tr data-day="samedi"><th scope="row">samedi</th><td>8h30 – 19h30</td></tr>
+            <tr data-day="dimanche" class="is-closed"><th scope="row">dimanche</th><td>Fermé</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="map" data-reveal>
+        <a class="map__fallback ul" href="https://www.google.com/maps/place/?q=place_id:ChIJz4ivClHTzRIRv1YXqpAEHog" target="_blank" rel="noopener">Ouvrir le plan dans Google Maps</a>
+        <iframe src="https://www.google.com/maps?q=Laetitia%20Luquet%20Th%C3%A9rapie%2C%2030%20Rue%20du%20Haut%20Castelet%2C%2006600%20Antibes&amp;output=embed" title="Plan : 30 rue du Haut Castelet, Antibes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT: big phone band -->
+  <section class="sec contact" id="rdv" aria-labelledby="h-rdv">
+    <div class="wrap grid">
+      <p class="label" data-reveal style="grid-column:1/-1"><b>05</b> — Rendez-vous</p>
+      <h2 id="h-rdv" data-reveal>Un appel <em>ou un SMS.</em></h2>
+      <a class="bigtel" href="tel:+33756863389" data-reveal><small>Du lundi au samedi, 8h30 – 19h30</small><span>07 56 86 33 89</span></a>
+      <div class="contact__acts" data-reveal>
+        <a class="btn" href="tel:+33756863389"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+        <a class="btn btn--ghost" href="sms:+33756863389?&amp;body=Bonjour%20Laetitia%2C%20je%20souhaiterais%20prendre%20rendez-vous%20pour%20une%20s%C3%A9ance.%20Quelles%20seraient%20vos%20disponibilit%C3%A9s%20%3F%20Merci."><svg class="ico" aria-hidden="true"><use href="#i-sms"/></svg>Envoyer un SMS</a>
+      </div>
+      <p class="contact__note" data-reveal>Le SMS s’ouvre avec un premier message prêt à envoyer. Sur Instagram&#8239;:<a class="ig ul" href="https://www.instagram.com/laetitia_aroma_phyto/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>@laetitia_aroma_phyto</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="wrap grid">
+    <p class="ft__name">Laetitia Luquet <em>Thérapie</em></p>
+    <div class="ft__col">
+      <span>30 rue du Haut Castelet</span>
+      <span>06600 Antibes</span>
+      <a class="ul" href="https://www.google.com/maps/dir/?api=1&amp;destination=Laetitia%20Luquet%20Th%C3%A9rapie%2C%2030%20Rue%20du%20Haut%20Castelet%2C%2006600%20Antibes" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+    <div class="ft__col">
+      <a class="ul" href="tel:+33756863389">07 56 86 33 89</a>
+      <a href="https://www.instagram.com/laetitia_aroma_phyto/" target="_blank" rel="noopener" aria-label="Instagram de Laetitia Luquet"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a>
+    </div>
+    <div class="ft__col">
+      <span>Lundi – samedi</span>
+      <span>8h30 – 19h30</span>
+    </div>
+    <p class="ft__base"><span>© <span id="year"></span> Laetitia Luquet Thérapie</span><span>Naturopathe à Antibes</span></p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Actions rapides">
+  <a href="tel:+33756863389"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+  <a href="sms:+33756863389?&amp;body=Bonjour%20Laetitia%2C%20je%20souhaiterais%20prendre%20rendez-vous%20pour%20une%20s%C3%A9ance.%20Quelles%20seraient%20vos%20disponibilit%C3%A9s%20%3F%20Merci."><svg class="ico" aria-hidden="true"><use href="#i-sms"/></svg>SMS</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Laetitia%20Luquet%20Th%C3%A9rapie%2C%2030%20Rue%20du%20Haut%20Castelet%2C%2006600%20Antibes" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Itinéraire</a>
+</nav>
+<!--sf:preview--><div style="padding:18px 16px;font:13px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;background:#0f0f10;color:#a3a3a8">Aperçu réalisé par Aymen Jallouli pour Laetitia Luquet Thérapie : ce site n'est pas encore le site officiel de l'établissement.</div><!--/sf:preview-->
+<!--sf:track--><script>(function(){try{var q=new URLSearchParams(location.search),r=q.get('r')||sessionStorage.getItem('sf_r');if(!r)return;sessionStorage.setItem('sf_r',r);navigator.sendBeacon("https://track.aymenjallouli.dev/t"+'?r='+encodeURIComponent(r)+'&p='+encodeURIComponent(location.pathname));}catch(e){}})();</script><!--/sf:track-->
+</body>
+</html>
